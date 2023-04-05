@@ -1,0 +1,6 @@
+1;Javier Molina;Consumidor final;17-02-2022
+2;Sergio Villagran;Consumidor final;17-02-2022
+3;Liliana Molina;Consumidor final;17-02-2022
+4;Veronica Les;Consumidor final;17-02-2022
+5;Luis blanco;Consumidor final;17-02-2022
+6;Ariel Pernia;Consumidor final;17-02-2022
