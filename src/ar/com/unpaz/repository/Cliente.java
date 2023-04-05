@@ -3,7 +3,6 @@ package ar.com.unpaz.repository;
 import java.util.Date;
 
 public class Cliente {
-	//Clase pojo
 	private int id;
 	private String nombreYApellido;
 	private String tipoDefactura;
@@ -28,4 +27,11 @@ public class Cliente {
 	public Date getFecha() {
 		return fecha;
 	}
+	@Override
+	public String toString() {
+		return "Cliente [id=" + id + ", nombreYApellido=" + nombreYApellido + ", tipoDefactura=" + tipoDefactura
+				+ ", fecha=" + fecha + "]";
+	}
+	
+	
 }
