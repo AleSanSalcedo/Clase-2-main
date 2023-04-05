@@ -24,10 +24,15 @@ public class LectorDeTxt {
 	        while ((line = archive.readLine()) != null) {
 	        	//Separo los datos del txt por ; y los voy agregando a un arreglo de string
 	            String[] data = line.split(";");
+	            //casteo el id a int
 	            int id = Integer.parseInt(data[0]);
+	            //casteo la fecha a date
 	            SimpleDateFormat format = new SimpleDateFormat ("dd/MM/yyy");
 	            Date fecha = format.parse(data[3]);
-	            Cliente aux = new Cliente (id, data[1], data[2], fecha);
+	            Cliente aux = new Cliente (id,
+	            		/*nombre y apellido*/data[1],
+	            		/*tipo de factura*/data[2],
+	            		fecha);
 	            clientes.add(aux);
 	        }
 	    } catch (IOException e) {

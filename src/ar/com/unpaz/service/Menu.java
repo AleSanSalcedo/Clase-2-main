@@ -19,7 +19,7 @@ public class Menu extends JFrame implements ActionListener {
         button2.addActionListener(this);
 
         // Crear un panel para el menú
-        JPanel panel = new JPanel(new GridLayout(3, 1));
+        JPanel panel = new JPanel(new GridLayout(2, 1));
         panel.add(button1);
         panel.add(button2);
 
@@ -30,14 +30,14 @@ public class Menu extends JFrame implements ActionListener {
         setLocationRelativeTo(null);
 
         // Establecer el tamaño del marco y mostrarlo en la pantalla
-        setSize(300, 200);
+        setSize(400, 200);
         setVisible(true);
     }
 
     public void actionPerformed(ActionEvent e) {
         // Determinar cuál botón fue presionado y ejecutar la acción correspondiente
         if (e.getSource() == button1) {
-            JOptionPane.showMessageDialog(this, "Ha seleccionado la opción 1");
+            JOptionPane.showMessageDialog(this, "Esto no esta listo");
         } else if (e.getSource() == button2) {
             JOptionPane.showMessageDialog(this, "Ha seleccionado la opción 2");
         }
